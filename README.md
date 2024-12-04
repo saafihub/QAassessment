@@ -18,7 +18,7 @@ This Framework is Scalable to combine various testing methodologies not only to 
          Detailed test execution reports with screenshots and logs for failed steps are generated, aiding in faster debugging and resolution.
 
 ## <u>Testing Architecture and Tools</u>
-1.	<u>Test Framework</u>: Playwright(UI) with Python [Can achive with Selenium, Cypress also etc]
+1.	<u>Test Framework</u>: Playwright(UI) with Python [Can also acheive with Selenium, Cypress etc]
 2.	<u>Design Pattern</u>: Page Object Model (POM)
 3.	<u>Testing Framework(Hybrid)</u>: BDD Structured using Playwright’s Cucumber-style syntax.
 4.	<u>Continuous Integration</u>: Jenkins/GitHub Actions (Can Integrate)
