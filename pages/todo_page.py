@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.ui_locators import UiLocators
 
+
 class TodoPage(BasePage):
     def __init__(self, page):
         super().__init__(page)
@@ -12,7 +13,6 @@ class TodoPage(BasePage):
     def verify_todo_text(self, todo_text):
         return todo_text in self.get_text(UiLocators.todo_list)
 
-    # Check if the input field is empty
     def is_input_field_empty(self):
         input_field = self.locator_get(UiLocators.todo_input)
         return input_field.input_value() == ''
