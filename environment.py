@@ -4,7 +4,6 @@ import json
 from playwright.sync_api import sync_playwright
 from utils.logger import error_logger
 
-# Load configuration
 with open("config.json") as config_file:
     config = json.load(config_file)
 
@@ -31,11 +30,9 @@ def after_step(context, step):
         if step.exception:
             logger.exception(f"Exception occurred: {step.exception}")
 
-        # Log Playwright page console logs
         for msg in context.page.console_messages():
             logger.error(f"Console Log: {msg.text}")
 
-        # Log network request/response details
         context.page.on('response', lambda response: logger.info(f"Response: {response.url}"))
         context.page.on('request', lambda request: logger.info(f"Request: {request.url}"))
 
