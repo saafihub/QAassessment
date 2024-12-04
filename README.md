@@ -55,7 +55,7 @@ Playwright over selenium for faster, more reliable test execution with built-in 
    ```
 2. Build the Project(Steps).
    ```
-   Once done with above steps then continue in terminal
+   Once done with python installation follow the below steps
        1. pip install virtualenv
        2. To isolate virtual environment, Goto ‘QAassessment’> Type Command: ‘py -3.11 -m venv qa_assess_tests’
        3. To get isolated environment, Go to folder ‘qa_assess_tests>Scripts’ and Type: ‘activate’
