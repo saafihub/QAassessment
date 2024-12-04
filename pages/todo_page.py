@@ -54,7 +54,6 @@ class TodoPage(BasePage):
         self.page.wait_for_selector(todo_selector, timeout=30000)
 
         todos = self.page.locator(f"{todo_selector} label").all_text_contents()
-        print(f"Filtered todos ({filter_type}): {todos}")
         return todos
 
     def clear_completed_todos(self):
