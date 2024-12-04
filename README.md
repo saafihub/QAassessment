@@ -1,5 +1,5 @@
 ## About
-Technical Challenge : Playwright(UI)+Python
+Technical Assessment : Playwright(UI)+Python
 
 This Playwright-based automation framework is structured using the Page Object Model (POM) and Playwright features. It is designed to accommodate multiple types of tests—API, UI functionality, with BDD Style within a single framework. The framework is built with scalability and extensibility in mind to add more test types with enhanced maintainability, reusability and also by separating concerns (e.g., test logic, page objects, and test data), the framework makes it easier to manage and scale as the application grows.
 
