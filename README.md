@@ -61,7 +61,6 @@ Playwright over selenium for faster, more reliable test execution with built-in 
        3. To get isolated environment, Go to folder ‘qa_assess_tests>Scripts’ and Type: ‘activate’
        4. Go back to root folder ‘QAassessment’
        6. To install all necessary packages, need to run the sample tests, Type: ‘pip install -r requirements.txt’
-       7. playwright install
    ```
    
 5. Run tests.
