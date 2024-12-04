@@ -43,7 +43,7 @@ Playwright over selenium for faster, more reliable test execution with built-in 
 
 ## Prerequisites
    ```
-   Install Python 3.10 or higher(3.11).
+   Install Python 3.10 or higher(3.11(recommended)).
    Ensure python installed correctly
    python --version
    ```
