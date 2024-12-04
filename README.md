@@ -8,13 +8,17 @@ In this Automation framework, Covered user story with 12 Scenarios through compr
 This Framework is Scalable to combine various testing methodologies not only to ensure complete coverage of user requirements also improved the clarity and communication of test cases among stakeholders. This holistic approach significantly contributes to delivering a high-quality product that aligns with user expectations.
 
 ## Automated Testing Framework Design
-1.	Page Object Model (POM): Each UI component and page flow are encapsulated in a separate class, reducing duplication and ensuring reusable and maintainable code. This structure enhances readability and scalability of test cases.
-2.	BDD Implementation: Select scenarios are implemented with BDD syntax, enhancing communication with non-technical stakeholders.
-3.	Test Data Management: Dynamic and static test data configurations are included to support test scenarios, can able to use external files and environment-specific configurations.
-4.	Reporting: Detailed test execution reports with screenshots and logs for failed steps are generated, aiding in faster debugging and resolution.
+1.	Page Object Model (POM): 
+        Each UI component and page flow are encapsulated in a separate class, reducing duplication and ensuring reusable and maintainable code. This structure enhances readability and scalability of test cases.
+2.	BDD Implementation: 
+         Select scenarios are implemented with BDD syntax, enhancing communication with non-technical stakeholders.
+3.	Test Data Management: 
+         Dynamic and static test data configurations are included to support test scenarios, can able to use external files and environment-specific configurations.
+4.	Reporting: 
+         Detailed test execution reports with screenshots and logs for failed steps are generated, aiding in faster debugging and resolution.
 
 ## Testing Architecture and Tools
-1.	Test Framework: Playwright(UI) with Python [Can achive with Selenium, Cypress etc]
+1.	Test Framework: Playwright(UI) with Python [Can achive with Selenium, Cypress also etc]
 2.	Design Pattern: Page Object Model (POM)
 3.	Testing Framework(Hybrid): BDD Structured using Playwright’s Cucumber-style syntax.
 4.	Continuous Integration: Jenkins/GitHub Actions (Can Integrate)
