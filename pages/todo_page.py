@@ -57,14 +57,12 @@ class TodoPage(BasePage):
         print(f"Filtered todos ({filter_type}): {todos}")
         return todos
 
-    # Clear all completed todos
     def clear_completed_todos(self):
         self.click(UiLocators.clear_complete)
 
     def get_todo_label_exists(self):
         self.element_exists(UiLocators.todo_label)
 
-    # Get completed todos
     def get_completed_todos(self):
         todo_list = self.locator_get(UiLocators.todo_list)
         completed_todos = todo_list.locator(UiLocators.complete)
