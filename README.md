@@ -25,7 +25,7 @@ This Framework is Scalable to combine various testing methodologies not only to 
 
 ## <u>Why Playwright?</u>
 Playwright over selenium for faster, more reliable test execution with built-in features like automatic waiting, cross-browser consistency, and modern web and api support. Playwright simplifies test writing and offers better handling of complex web applications, while Selenium can be slower and requires more manual setup and synchronization.
-```
+
 
 ## Framework Structure
       ├── features      # feature files
