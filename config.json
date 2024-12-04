@@ -1,0 +1,4 @@
+{
+    "base_url": "https://todomvc.com/examples/react/dist/",
+    "browser": "chromium"
+}

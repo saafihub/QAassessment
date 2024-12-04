@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TESTS-features.organize_todos.xml</title>
+    <style type="text/css">
+        body {
+    background-color: white;
+    padding-bottom: 20em;
+    margin: 0;
+    min-height: 15cm;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: #007acc;
+    color: white;
+    padding: 3mm;
+    margin-top: 0;
+    margin-bottom: 1mm;
+}
+
+.footer {
+    font-style: italic;
+    font-size: small;
+    text-align: right;
+    padding: 1em;
+}
+
+.testsuite {
+    padding-bottom: 2em;
+    margin-left: 1em;
+}
+
+.proplist {
+    width: 100%;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+.proplist th {
+    background-color: silver;
+    width: 5em;
+    padding: 2px;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.proplist td {
+    padding: 2px;
+    word-break: break-all;
+}
+
+.index-table {
+    width: 90%;
+    margin-left: 1em;
+}
+
+.index-table td {
+    vertical-align: top;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.failure-index {
+
+}
+
+.toc {
+    margin-bottom: 2em;
+    font-family: monospace;
+}
+
+.stdio, pre {
+    min-height: 1em;
+    background-color: #1e1e1e;
+    color: silver;
+    padding: 0.5em;
+}
+.tdpre {
+    background-color: #1e1e1e;
+}
+
+.test {
+    margin-left: 0.5cm;
+}
+
+.toc {
+    list-style: none;
+}
+
+.toc li.outcome {
+    list-style: none;
+}
+
+.toc li.outcome::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.27em;
+    margin-left: -1.27em;
+    font-size: 1.2em;
+}
+
+.toc li.outcome-failed {
+    background-color: lightcoral;
+}
+
+.toc li.outcome-failed::before {
+    color: red;
+}
+
+.toc li.outcome-passed::before {
+    color: green;
+}
+
+.toc li.outcome-skipped::before {
+    color: orange;
+}
+
+.testcases .outcome {
+    border-left: 1em;
+    padding: 2px;
+}
+
+.testcases .outcome-failed {
+    border-left: 1em solid lightcoral;
+}
+
+
+.outcome-passed {
+    border-left: 1em solid lightgreen;
+}
+
+.outcome-skipped {
+    border-left: 1em dotted silver;
+}
+
+.testcases .outcome-passed {
+    border-left: 1em solid lightgreen;
+}
+
+.testcases .outcome-skipped {
+    border-left: 1em solid #FED8B1;
+}
+
+.stats-table {
+}
+
+.stats-table td {
+    min-width: 4em;
+    text-align: right;
+}
+
+.stats-table .failed {
+    background-color: lightcoral;
+}
+
+.stats-table .passed {
+    background-color: lightgreen;
+}
+
+.matrix-table {
+    table-layout: fixed;
+    border-spacing: 0;
+    width: available;
+    margin-left: 1em;
+}
+
+.matrix-table td {
+    vertical-align: center;
+}
+
+.matrix-table td:last-child {
+    width: 0;
+}
+
+.matrix-table tr:hover {
+    background-color: yellow;
+}
+
+.matrix-axis-name {
+    white-space: nowrap;
+    padding-right: 0.5em;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    text-align: right;
+}
+
+.matrix-axis-line {
+    border-left: 1px solid black;
+    width: 0.5em;
+}
+
+.matrix-classname {
+    text-align: left;
+    width: 100%;
+    border-top: 2px solid grey;
+    border-bottom: 1px solid silver;
+}
+
+.matrix-casename {
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    padding-left: 1em;
+    border-bottom: 1px solid silver;
+}
+
+.matrix-result {
+    display: block;
+    width: 1em;
+    text-align: center;
+    padding: 1mm;
+    margin: 0;
+}
+
+.matrix-result-combined {
+    white-space: nowrap;
+    padding-right: 0.2em;
+    text-align: right;
+}
+
+.matrix-result-failed {
+    background-color: lightcoral;
+}
+
+.matrix-result-passed {
+    background-color: lightgreen;
+}
+
+.matrix-result-skipped {
+    background-color: lightyellow;
+}
+
+.matrix-even {
+    background-color: lightgray;
+}
+    </style>
+</head>
+<body>
+    
+<h1>
+    Test Report : TESTS-features.organize_todos.xml
+</h1>
+
+
+<a id="toc"></a>
+<table class="index-table">
+    <tr>
+        <td>
+            <ul class="toc">
+            
+                
+                <li>features.organize_todos.Organize/Manage/View todos effectively
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#b8435d99-9340-4db4-8bcd-0ff066b44913">Add a new todo</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#fec60874-7299-4190-bfcc-949853f375c9">Edit an existing todo</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#66edb11c-fa97-449d-a753-322532101ebf">Cancel editing a todo</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#09027400-f4a3-4454-8c56-9d88597a6fb0">Mark a todo as completed</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#8ab6b9dd-0e7f-4dde-8691-a5c9cb6bdfd6">Mark a completed todo as incomplete</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#35e02758-87f3-4bd9-95f5-9b73cb41a3fa">Delete a todo</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#99701465-f446-46d6-b282-db9eb5108ad8">View all todos</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#34416eb3-480a-403c-9052-2b4cc17edbee">View active and completed todos</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#dbb5f140-f83d-4104-9865-b8bd0300f901">View mixed of all, active and completed todos</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d2d2796e-b6ed-4791-a737-2ba51eac16f8">View all todo list of make it 2 completed and revert all back active</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#06aeebbb-3f24-434a-9d6f-938e6494eab0">Completing some of the todos and try clearing completed todos</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#1e333451-81fc-44e1-9628-08b7c42c238a">Mixed of todos active and Completed filer them based on action</a></li>
+                    
+                </ul>
+                </li>
+                
+            
+            </ul>
+        </td>
+        <td class="failure-index">
+            <ul class="toc">
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+
+    <div class="testsuite">
+        <h2>Test Suite: features.organize_todos.Organize/Manage/View todos effectively</h2>
+        <a id="7c52b8ad-fdc7-4a18-9190-6485063a7df8"></a>
+        
+        
+        <h3>Results</h3>
+        <table class="proplist">
+            <tr>
+                <th>Duration</th><td>12.45 sec</td>
+            </tr>
+            <tr>
+                <th>Tests</th><td>12</td>
+            </tr>
+            <tr>
+                <th>Failures</th><td>0</td>
+            </tr>
+        </table>
+
+        <div class="testclasses">
+            <h3>Tests</h3>
+            
+            <div class="testclass">
+                <h4>features.organize_todos.Organize/Manage/View todos effectively</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b8435d99-9340-4db4-8bcd-0ff066b44913"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Add a new todo</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>3.847 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Add a new todo
+    Given I am on the Todos page ... passed in 1.689s
+    When I type &#34;Read and write work emails&#34; in the input field and press Enter ... passed in 2.136s
+    Then the todo &#34;Read and write work emails&#34; should appear in the list ... passed in 0.022s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="fec60874-7299-4190-bfcc-949853f375c9"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Edit an existing todo</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>1.262 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Edit an existing todo
+    Given I am on the Todos page ... passed in 0.315s
+    And I have a todo &#34;draft new sales document&#34; ... passed in 0.276s
+    When I double-click on &#34;draft new sales document&#34; and change the text to &#34;pay monthly bills&#34; ... passed in 0.565s
+    And I press &#34;Enter&#34; ... passed in 0.041s
+    Then the todo should be updated to &#34;pay monthly bills&#34; ... passed in 0.065s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="66edb11c-fa97-449d-a753-322532101ebf"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Cancel editing a todo</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.969 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Cancel editing a todo
+    Given I am on the Todos page ... passed in 0.227s
+    And I have a todo &#34;daily standup meet&#34; ... passed in 0.240s
+    When I double-click on &#34;daily standup meet&#34; and leave the input field empty ... passed in 0.400s
+    And I press &#34;Tab&#34; ... passed in 0.063s
+    Then the todo &#34;daily standup meet&#34; should remain unchanged ... passed in 0.038s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="09027400-f4a3-4454-8c56-9d88597a6fb0"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Mark a todo as completed</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.938 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Mark a todo as completed
+    Given I am on the Todos page ... passed in 0.300s
+    And I have a todo &#34;attend bug triage&#34; ... passed in 0.213s
+    When I click the checkbox next to todo lists ... passed in 0.369s
+      | todo_text         |
+      | attend bug triage |
+    Then the todo &#34;attend bug triage&#34; should be marked as completed ... passed in 0.055s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="8ab6b9dd-0e7f-4dde-8691-a5c9cb6bdfd6"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Mark a completed todo as incomplete</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.529 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Mark a completed todo as incomplete
+    Given I am on the Todos page ... passed in 0.176s
+    And I have a todo &#34;file Iras submission&#34; ... passed in 0.134s
+    When I have a completed todo and select all as &#34;Yes&#34; ... passed in 0.085s
+    And I click the checkbox next to todo lists ... passed in 0.117s
+      | todo_text            |
+      | file Iras submission |
+    Then the todo &#34;file Iras submission&#34; should be marked as not completed ... passed in 0.017s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="35e02758-87f3-4bd9-95f5-9b73cb41a3fa"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Delete a todo</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.343 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Delete a todo
+    Given I am on the Todos page ... passed in 0.085s
+    Given I have a todo &#34;Read and write work emails&#34; ... passed in 0.088s
+    When I click the delete button next to &#34;Read and write work emails&#34; ... passed in 0.154s
+    Then the todo &#34;Read and write work emails&#34; should be removed from the list ... passed in 0.016s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="99701465-f446-46d6-b282-db9eb5108ad8"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>View all todos</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.69 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: View all todos
+    Given I am on the Todos page ... passed in 0.105s
+    And I have a todo below todo list ... passed in 0.387s
+      | todo_text                  |
+      | Read and write work emails |
+      | clear the bins             |
+      | workout                    |
+    When I click on the &#34;Completed&#34; filter ... passed in 0.070s
+    And I click on the &#34;All&#34; filter ... passed in 0.077s
+    Then I should see all todos including ... passed in 0.035s
+      | todo_text                  |
+      | Read and write work emails |
+      | clear the bins             |
+      | workout                    |
+    And I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="34416eb3-480a-403c-9052-2b4cc17edbee"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>View active and completed todos</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.448 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: View active and completed todos
+    Given I am on the Todos page ... passed in 0.076s
+    And I have a todo below todo list ... passed in 0.199s
+      | todo_text            |
+      | call Johnny karky    |
+      | draft a new homepage |
+      | daily standup meet   |
+    When I click on the &#34;Completed&#34; filter ... passed in 0.072s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 3 items left! |
+    When I click on the &#34;Active&#34; filter ... passed in 0.067s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="dbb5f140-f83d-4104-9865-b8bd0300f901"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>View mixed of all, active and completed todos</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.911 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: View mixed of all, active and completed todos
+    Given I am on the Todos page ... passed in 0.070s
+    And I have a todo below todo list ... passed in 0.195s
+      | todo_text            |
+      | file Iras submission |
+      | pay monthly bills    |
+      | attend bug triage    |
+    When I click the checkbox next to todo lists ... passed in 0.136s
+      | todo_text            |
+      | file Iras submission |
+      | attend bug triage    |
+    And I click on the &#34;Active&#34; filter ... passed in 0.079s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count   |
+      | 1 item left! |
+    When I click on the &#34;All&#34; filter ... passed in 0.075s
+    And I click the checkbox next to todo lists ... passed in 0.075s
+      | todo_text            |
+      | file Iras submission |
+    And I click on the &#34;Completed&#34; filter ... passed in 0.078s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 2 items left! |
+    When I click the checkbox next to todo lists ... passed in 0.043s
+      | todo_text         |
+      | attend bug triage |
+    And I click on the &#34;All&#34; filter ... passed in 0.109s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d2d2796e-b6ed-4791-a737-2ba51eac16f8"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>View all todo list of make it 2 completed and revert all back active</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.961 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: View all todo list of make it 2 completed and revert all back active
+    Given I am on the Todos page ... passed in 0.078s
+    And I have a todo below todo list ... passed in 0.284s
+      | todo_text         |
+      | call Johnny Memon |
+      | Cycling           |
+      | Jogging           |
+      | Bike ride         |
+    When I click the checkbox next to todo lists ... passed in 0.151s
+      | todo_text |
+      | Cycling   |
+      | Bike ride |
+    And I click on the &#34;Active&#34; filter ... passed in 0.098s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 2 items left! |
+    When I click on the &#34;All&#34; filter ... passed in 0.067s
+    When I click the checkbox next to todo lists ... passed in 0.249s
+      | todo_text |
+      | Cycling   |
+      | Bike ride |
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 4 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="06aeebbb-3f24-434a-9d6f-938e6494eab0"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Completing some of the todos and try clearing completed todos</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.916 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Completing some of the todos and try clearing completed todos
+    Given I am on the Todos page ... passed in 0.077s
+    And I have a todo below todo list ... passed in 0.334s
+      | todo_text  |
+      | Running    |
+      | Cycling    |
+      | Jogging    |
+      | Bike ride  |
+      | Long Drive |
+    When I click the checkbox next to todo lists ... passed in 0.206s
+      | todo_text |
+      | Cycling   |
+      | Bike ride |
+      | Running   |
+    And I click on Clear completed ... passed in 0.066s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 2 items left! |
+    Given I have a todo below todo list ... passed in 0.056s
+      | todo_text     |
+      | Speed Walking |
+    When I click on the &#34;Completed&#34; filter ... passed in 0.055s
+    And I click on the &#34;All&#34; filter ... passed in 0.083s
+    Then I should see count of todo as below ... passed in 0.022s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="1e333451-81fc-44e1-9628-08b7c42c238a"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Mixed of todos active and Completed filer them based on action</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.635 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+  Scenario: Mixed of todos active and Completed filer them based on action
+    Given I am on the Todos page ... passed in 0.081s
+    And I have a todo below todo list ... passed in 0.318s
+      | todo_text                  |
+      | Read and write work emails |
+      | file Iras submission       |
+      | pay monthly bills          |
+      | clear the bins             |
+      | workout                    |
+    When I click the checkbox next to todo lists ... passed in 0.150s
+      | todo_text            |
+      | clear the bins       |
+      | file Iras submission |
+    Then I should see count of &#34;Completed&#34; as &#34;2&#34; ... passed in 0.046s
+    And I should see count of &#34;Active&#34; as &#34;3&#34; ... passed in 0.040s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Filtered todos (Completed): [&#39;file Iras submission&#39;, &#39;clear the bins&#39;]
+Filtered todos (Active): [&#39;Read and write work emails&#39;, &#39;pay monthly bills&#39;, &#39;workout&#39;]
+
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+<p class="footer">
+    Generated by junit2html
+</p>
+</body>
+</html>

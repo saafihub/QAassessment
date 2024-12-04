@@ -1,0 +1,109 @@
+2024-12-04 09:35:10,688 - INFO - Navigated to Todos page
+2024-12-04 09:35:10,899 - INFO - Added todo: Read and write work emails
+2024-12-04 09:35:10,923 - INFO - Verified todo 'Read and write work emails' is in the list
+2024-12-04 09:35:11,003 - INFO - Navigated to Todos page
+2024-12-04 09:35:11,094 - INFO - Pre-condition: Added todo 'draft new sales document'
+2024-12-04 09:35:11,227 - INFO - Edited todo 'draft new sales document' to 'pay monthly bills'
+2024-12-04 09:35:11,247 - INFO - Press Key : Enter
+2024-12-04 09:35:11,268 - INFO - Verified todo updated to 'pay monthly bills'
+2024-12-04 09:35:11,337 - INFO - Navigated to Todos page
+2024-12-04 09:35:11,421 - INFO - Pre-condition: Added todo 'daily standup meet'
+2024-12-04 09:35:11,509 - INFO - Edited todo 'daily standup meet' to empty string()
+2024-12-04 09:35:11,540 - INFO - Press Key : Tab
+2024-12-04 09:35:11,558 - INFO - Verified todo is in the list: daily standup meet
+2024-12-04 09:35:11,624 - INFO - Navigated to Todos page
+2024-12-04 09:35:11,704 - INFO - Pre-condition: Added todo 'attend bug triage'
+2024-12-04 09:35:11,794 - INFO - Marked todo '<Row ['attend bug triage']>' as completed
+2024-12-04 09:35:11,815 - INFO - Verified todo 'attend bug triage' is completed
+2024-12-04 09:35:11,891 - INFO - Navigated to Todos page
+2024-12-04 09:35:11,970 - INFO - Pre-condition: Added todo 'file Iras submission'
+2024-12-04 09:35:12,027 - INFO - Select/Unselect all Checkboxes
+2024-12-04 09:35:12,108 - INFO - Marked todo '<Row ['file Iras submission']>' as completed
+2024-12-04 09:35:12,124 - INFO - Verified todo 'file Iras submission' is not been completed
+2024-12-04 09:35:12,188 - INFO - Navigated to Todos page
+2024-12-04 09:35:12,269 - INFO - Pre-condition: Added todo 'Read and write work emails'
+2024-12-04 09:35:12,369 - INFO - Deleted todo 'Read and write work emails'
+2024-12-04 09:35:12,387 - INFO - Verified todo 'Read and write work emails' is removed
+2024-12-04 09:35:12,447 - INFO - Navigated to Todos page
+2024-12-04 09:35:12,540 - INFO - Pre-condition: Added todo '<Row ['Read and write work emails']>'
+2024-12-04 09:35:12,593 - INFO - Pre-condition: Added todo '<Row ['clear the bins']>'
+2024-12-04 09:35:12,650 - INFO - Pre-condition: Added todo '<Row ['workout']>'
+2024-12-04 09:35:12,711 - INFO - Applied filter: Completed
+2024-12-04 09:35:12,798 - INFO - Applied filter: All
+2024-12-04 09:35:12,869 - INFO - Verified only completed todos are cleared:Read and write work emails
+2024-12-04 09:35:12,869 - INFO - Verified only completed todos are cleared:clear the bins
+2024-12-04 09:35:12,869 - INFO - Verified only completed todos are cleared:workout
+2024-12-04 09:35:12,889 - INFO - Actual count: 3 items left!, Expected count: 3 items left!
+2024-12-04 09:35:12,889 - INFO - Verified only completed todos are cleared:3 items left!
+2024-12-04 09:35:12,946 - INFO - Navigated to Todos page
+2024-12-04 09:35:13,052 - INFO - Pre-condition: Added todo '<Row ['call Johnny karky']>'
+2024-12-04 09:35:13,104 - INFO - Pre-condition: Added todo '<Row ['draft a new homepage']>'
+2024-12-04 09:35:13,157 - INFO - Pre-condition: Added todo '<Row ['daily standup meet']>'
+2024-12-04 09:35:13,228 - INFO - Applied filter: Completed
+2024-12-04 09:35:13,251 - INFO - Actual count: 3 items left!, Expected count: 3 items left!
+2024-12-04 09:35:13,251 - INFO - Verified only completed todos are cleared:3 items left!
+2024-12-04 09:35:13,327 - INFO - Applied filter: Active
+2024-12-04 09:35:13,347 - INFO - Actual count: 3 items left!, Expected count: 3 items left!
+2024-12-04 09:35:13,347 - INFO - Verified only completed todos are cleared:3 items left!
+2024-12-04 09:35:13,407 - INFO - Navigated to Todos page
+2024-12-04 09:35:13,496 - INFO - Pre-condition: Added todo '<Row ['file Iras submission']>'
+2024-12-04 09:35:13,549 - INFO - Pre-condition: Added todo '<Row ['pay monthly bills']>'
+2024-12-04 09:35:13,600 - INFO - Pre-condition: Added todo '<Row ['attend bug triage']>'
+2024-12-04 09:35:13,656 - INFO - Marked todo '<Row ['file Iras submission']>' as completed
+2024-12-04 09:35:13,722 - INFO - Marked todo '<Row ['attend bug triage']>' as completed
+2024-12-04 09:35:13,807 - INFO - Applied filter: Active
+2024-12-04 09:35:13,836 - INFO - Actual count: 1 item left!, Expected count: 1 item left!
+2024-12-04 09:35:13,836 - INFO - Verified only completed todos are cleared:1 item left!
+2024-12-04 09:35:13,892 - INFO - Applied filter: All
+2024-12-04 09:35:13,967 - INFO - Marked todo '<Row ['file Iras submission']>' as completed
+2024-12-04 09:35:14,049 - INFO - Applied filter: Completed
+2024-12-04 09:35:14,078 - INFO - Actual count: 2 items left!, Expected count: 2 items left!
+2024-12-04 09:35:14,078 - INFO - Verified only completed todos are cleared:2 items left!
+2024-12-04 09:35:14,134 - INFO - Marked todo '<Row ['attend bug triage']>' as completed
+2024-12-04 09:35:14,195 - INFO - Applied filter: All
+2024-12-04 09:35:14,221 - INFO - Actual count: 3 items left!, Expected count: 3 items left!
+2024-12-04 09:35:14,222 - INFO - Verified only completed todos are cleared:3 items left!
+2024-12-04 09:35:14,295 - INFO - Navigated to Todos page
+2024-12-04 09:35:14,411 - INFO - Pre-condition: Added todo '<Row ['call Johnny Memon']>'
+2024-12-04 09:35:14,465 - INFO - Pre-condition: Added todo '<Row ['Cycling']>'
+2024-12-04 09:35:14,521 - INFO - Pre-condition: Added todo '<Row ['Jogging']>'
+2024-12-04 09:35:14,575 - INFO - Pre-condition: Added todo '<Row ['Bike ride']>'
+2024-12-04 09:35:14,654 - INFO - Marked todo '<Row ['Cycling']>' as completed
+2024-12-04 09:35:14,720 - INFO - Marked todo '<Row ['Bike ride']>' as completed
+2024-12-04 09:35:14,796 - INFO - Applied filter: Active
+2024-12-04 09:35:14,819 - INFO - Actual count: 2 items left!, Expected count: 2 items left!
+2024-12-04 09:35:14,819 - INFO - Verified only completed todos are cleared:2 items left!
+2024-12-04 09:35:14,875 - INFO - Applied filter: All
+2024-12-04 09:35:14,949 - INFO - Marked todo '<Row ['Cycling']>' as completed
+2024-12-04 09:35:15,022 - INFO - Marked todo '<Row ['Bike ride']>' as completed
+2024-12-04 09:35:15,047 - INFO - Actual count: 4 items left!, Expected count: 4 items left!
+2024-12-04 09:35:15,047 - INFO - Verified only completed todos are cleared:4 items left!
+2024-12-04 09:35:15,111 - INFO - Navigated to Todos page
+2024-12-04 09:35:15,243 - INFO - Pre-condition: Added todo '<Row ['Running']>'
+2024-12-04 09:35:15,298 - INFO - Pre-condition: Added todo '<Row ['Cycling']>'
+2024-12-04 09:35:15,350 - INFO - Pre-condition: Added todo '<Row ['Jogging']>'
+2024-12-04 09:35:15,404 - INFO - Pre-condition: Added todo '<Row ['Bike ride']>'
+2024-12-04 09:35:15,463 - INFO - Pre-condition: Added todo '<Row ['Long Drive']>'
+2024-12-04 09:35:15,538 - INFO - Marked todo '<Row ['Cycling']>' as completed
+2024-12-04 09:35:15,601 - INFO - Marked todo '<Row ['Bike ride']>' as completed
+2024-12-04 09:35:15,667 - INFO - Marked todo '<Row ['Running']>' as completed
+2024-12-04 09:35:15,739 - INFO - Clicked 'Clear completed'
+2024-12-04 09:35:15,761 - INFO - Actual count: 2 items left!, Expected count: 2 items left!
+2024-12-04 09:35:15,761 - INFO - Verified only completed todos are cleared:2 items left!
+2024-12-04 09:35:15,817 - INFO - Pre-condition: Added todo '<Row ['Speed Walking']>'
+2024-12-04 09:35:15,876 - INFO - Applied filter: Completed
+2024-12-04 09:35:15,926 - INFO - Applied filter: All
+2024-12-04 09:35:15,946 - INFO - Actual count: 3 items left!, Expected count: 3 items left!
+2024-12-04 09:35:15,947 - INFO - Verified only completed todos are cleared:3 items left!
+2024-12-04 09:35:16,007 - INFO - Navigated to Todos page
+2024-12-04 09:35:16,144 - INFO - Pre-condition: Added todo '<Row ['Read and write work emails']>'
+2024-12-04 09:35:16,194 - INFO - Pre-condition: Added todo '<Row ['file Iras submission']>'
+2024-12-04 09:35:16,246 - INFO - Pre-condition: Added todo '<Row ['pay monthly bills']>'
+2024-12-04 09:35:16,301 - INFO - Pre-condition: Added todo '<Row ['clear the bins']>'
+2024-12-04 09:35:16,354 - INFO - Pre-condition: Added todo '<Row ['workout']>'
+2024-12-04 09:35:16,405 - INFO - Marked todo '<Row ['clear the bins']>' as completed
+2024-12-04 09:35:16,471 - INFO - Marked todo '<Row ['file Iras submission']>' as completed
+2024-12-04 09:35:16,516 - INFO - ['file Iras submission', 'clear the bins']
+2024-12-04 09:35:16,516 - INFO - Verified only completed todos are cleared
+2024-12-04 09:35:16,556 - INFO - ['Read and write work emails', 'pay monthly bills', 'workout']
+2024-12-04 09:35:16,556 - INFO - Verified only completed todos are cleared

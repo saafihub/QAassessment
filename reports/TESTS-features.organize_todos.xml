@@ -1,0 +1,253 @@
+<testsuite name="features.organize_todos.Organize/Manage/View todos effectively" tests="12" errors="0" failures="0" skipped="0" time="5.660083" timestamp="2024-12-04T09:35:16.559185" hostname="DESKTOP-SEN18BU"><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Add a new todo" status="passed" time="0.550239"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Add a new todo
+    Given I am on the Todos page ... passed in 0.316s
+    When I type "Read and write work emails" in the input field and press Enter ... passed in 0.210s
+    Then the todo "Read and write work emails" should appear in the list ... passed in 0.024s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Edit an existing todo" status="passed" time="0.332181"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Edit an existing todo
+    Given I am on the Todos page ... passed in 0.075s
+    And I have a todo "draft new sales document" ... passed in 0.087s
+    When I double-click on "draft new sales document" and change the text to "pay monthly bills" ... passed in 0.131s
+    And I press "Enter" ... passed in 0.019s
+    Then the todo should be updated to "pay monthly bills" ... passed in 0.020s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Cancel editing a todo" status="passed" time="0.280045"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Cancel editing a todo
+    Given I am on the Todos page ... passed in 0.066s
+    And I have a todo "daily standup meet" ... passed in 0.079s
+    When I double-click on "daily standup meet" and leave the input field empty ... passed in 0.087s
+    And I press "Tab" ... passed in 0.030s
+    Then the todo "daily standup meet" should remain unchanged ... passed in 0.018s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Mark a todo as completed" status="passed" time="0.231"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Mark a todo as completed
+    Given I am on the Todos page ... passed in 0.062s
+    And I have a todo "attend bug triage" ... passed in 0.078s
+    When I click the checkbox next to todo lists ... passed in 0.071s
+      | todo_text         |
+      | attend bug triage |
+    Then the todo "attend bug triage" should be marked as completed ... passed in 0.020s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Mark a completed todo as incomplete" status="passed" time="0.2907"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Mark a completed todo as incomplete
+    Given I am on the Todos page ... passed in 0.065s
+    And I have a todo "file Iras submission" ... passed in 0.078s
+    When I have a completed todo and select all as "Yes" ... passed in 0.055s
+    And I click the checkbox next to todo lists ... passed in 0.076s
+      | todo_text            |
+      | file Iras submission |
+    Then the todo "file Iras submission" should be marked as not completed ... passed in 0.016s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Delete a todo" status="passed" time="0.256732"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Delete a todo
+    Given I am on the Todos page ... passed in 0.060s
+    Given I have a todo "Read and write work emails" ... passed in 0.081s
+    When I click the delete button next to "Read and write work emails" ... passed in 0.099s
+    Then the todo "Read and write work emails" should be removed from the list ... passed in 0.017s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="View all todos" status="passed" time="0.434167"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: View all todos
+    Given I am on the Todos page ... passed in 0.057s
+    And I have a todo below todo list ... passed in 0.187s
+      | todo_text                  |
+      | Read and write work emails |
+      | clear the bins             |
+      | workout                    |
+    When I click on the "Completed" filter ... passed in 0.058s
+    And I click on the "All" filter ... passed in 0.082s
+    Then I should see all todos including ... passed in 0.034s
+      | todo_text                  |
+      | Read and write work emails |
+      | clear the bins             |
+      | workout                    |
+    And I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="View active and completed todos" status="passed" time="0.420716"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: View active and completed todos
+    Given I am on the Todos page ... passed in 0.054s
+    And I have a todo below todo list ... passed in 0.188s
+      | todo_text            |
+      | call Johnny karky    |
+      | draft a new homepage |
+      | daily standup meet   |
+    When I click on the "Completed" filter ... passed in 0.070s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 3 items left! |
+    When I click on the "Active" filter ... passed in 0.076s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="View mixed of all, active and completed todos" status="passed" time="0.797001"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: View mixed of all, active and completed todos
+    Given I am on the Todos page ... passed in 0.057s
+    And I have a todo below todo list ... passed in 0.180s
+      | todo_text            |
+      | file Iras submission |
+      | pay monthly bills    |
+      | attend bug triage    |
+    When I click the checkbox next to todo lists ... passed in 0.116s
+      | todo_text            |
+      | file Iras submission |
+      | attend bug triage    |
+    And I click on the "Active" filter ... passed in 0.084s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count   |
+      | 1 item left! |
+    When I click on the "All" filter ... passed in 0.056s
+    And I click the checkbox next to todo lists ... passed in 0.065s
+      | todo_text            |
+      | file Iras submission |
+    And I click on the "Completed" filter ... passed in 0.081s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 2 items left! |
+    When I click the checkbox next to todo lists ... passed in 0.053s
+      | todo_text         |
+      | attend bug triage |
+    And I click on the "All" filter ... passed in 0.056s
+    Then I should see count of todo as below ... passed in 0.017s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="View all todo list of make it 2 completed and revert all back active" status="passed" time="0.72822"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: View all todo list of make it 2 completed and revert all back active
+    Given I am on the Todos page ... passed in 0.055s
+    And I have a todo below todo list ... passed in 0.240s
+      | todo_text         |
+      | call Johnny Memon |
+      | Cycling           |
+      | Jogging           |
+      | Bike ride         |
+    When I click the checkbox next to todo lists ... passed in 0.130s
+      | todo_text |
+      | Cycling   |
+      | Bike ride |
+    And I click on the "Active" filter ... passed in 0.077s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 2 items left! |
+    When I click on the "All" filter ... passed in 0.056s
+    When I click the checkbox next to todo lists ... passed in 0.136s
+      | todo_text |
+      | Cycling   |
+      | Bike ride |
+    Then I should see count of todo as below ... passed in 0.019s
+      | text_count    |
+      | 4 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Completing some of the todos and try clearing completed todos" status="passed" time="0.807457"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Completing some of the todos and try clearing completed todos
+    Given I am on the Todos page ... passed in 0.059s
+    And I have a todo below todo list ... passed in 0.295s
+      | todo_text  |
+      | Running    |
+      | Cycling    |
+      | Jogging    |
+      | Bike ride  |
+      | Long Drive |
+    When I click the checkbox next to todo lists ... passed in 0.190s
+      | todo_text |
+      | Cycling   |
+      | Bike ride |
+      | Running   |
+    And I click on Clear completed ... passed in 0.071s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 2 items left! |
+    Given I have a todo below todo list ... passed in 0.053s
+      | todo_text     |
+      | Speed Walking |
+    When I click on the "Completed" filter ... passed in 0.057s
+    And I click on the "All" filter ... passed in 0.050s
+    Then I should see count of todo as below ... passed in 0.016s
+      | text_count    |
+      | 3 items left! |
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.organize_todos.Organize/Manage/View todos effectively" name="Mixed of todos active and Completed filer them based on action" status="passed" time="0.531624"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Mixed of todos active and Completed filer them based on action
+    Given I am on the Todos page ... passed in 0.056s
+    And I have a todo below todo list ... passed in 0.284s
+      | todo_text                  |
+      | Read and write work emails |
+      | file Iras submission       |
+      | pay monthly bills          |
+      | clear the bins             |
+      | workout                    |
+    When I click the checkbox next to todo lists ... passed in 0.108s
+      | todo_text            |
+      | clear the bins       |
+      | file Iras submission |
+    Then I should see count of "Completed" as "2" ... passed in 0.045s
+    And I should see count of "Active" as "3" ... passed in 0.039s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Filtered todos (Completed): ['file Iras submission', 'clear the bins']
+Filtered todos (Active): ['Read and write work emails', 'pay monthly bills', 'workout']
+
+]]>
+</system-out></testcase></testsuite>
