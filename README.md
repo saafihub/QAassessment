@@ -31,6 +31,7 @@ Playwright over selenium for faster, more reliable test execution with built-in 
       ├── features      # feature files
       ├── pages         # Page Object Model (POM) classes
       ├── steps         # step definition files
+      ├── steps         # generate test logs 
       ├── reports       # generated reports etc
       ├── utils         # Utility classes (e.g., logger etc)
       config.json       # configuration files
