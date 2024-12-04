@@ -7,7 +7,7 @@ In this Automation framework, Covered user story derived with 12 Scenarios throu
 
 This Framework is Scalable to combine various testing methodologies not only to ensure complete coverage of user requirements also improved the clarity and communication of test cases among stakeholders. This holistic approach significantly contributes to delivering a high-quality product that aligns with user expectations.
 
-## <u>Automated Testing Framework Design Approach</u>
+## <u>Automated Testing Framework Design</u>
 1.	<u>Page Object Model (POM)</u>: 
         Each UI component and page flow are encapsulated in a separate class, reducing duplication and ensuring reusable and maintainable code. This structure enhances readability and scalability of test cases.
 2.	<u>BDD Implementation</u>: 
@@ -18,7 +18,7 @@ This Framework is Scalable to combine various testing methodologies not only to 
          Detailed test execution reports with screenshots and logs for failed steps are generated, aiding in faster debugging and resolution.
 
 ## <u>Test Architecture and Tools</u>
-1.	<u>Test Framework</u>: Playwright(UI) with Python [Can also acheive with Selenium, Cypress etc]
+1.	<u>Tool & Language</u>: Playwright(UI) with Python [Can also acheive with Selenium, Cypress etc]
 2.	<u>Design Pattern</u>: Page Object Model (POM)
 3.	<u>Testing Framework(Hybrid)</u>: BDD Structured using Playwright’s Cucumber-style syntax.
 4.	<u>Continuous Integration</u>: Jenkins/GitHub Actions (Can Integrate)
