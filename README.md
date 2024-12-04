@@ -61,7 +61,7 @@ Playwright over selenium for faster, more reliable test execution with built-in 
        2. To isolate virtual environment, Goto ‘QAassessment’> Type Command: ‘py -3.11 -m venv qa_assess_tests’
        3. To get isolated environment, Go to folder ‘qa_assess_tests>Scripts’ and Type: ‘activate’
        4. Go back to root folder ‘QAassessment’
-       6. To install all necessary packages, need to run this requirement file, Type: ‘pip install -r requirements.txt’
+       5. To install all necessary packages, need to run this requirement file, Type: ‘pip install -r requirements.txt’
    ```
    
 5. Run tests.
